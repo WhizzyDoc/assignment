@@ -1,14 +1,190 @@
+<!--
+My first code in the year of 2022
+Although it's a little rough, that's because I didn't get much time for it 
+please upvote
+-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CSS Transform</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <div class="box"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-</body>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Car design</title>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <script src="https://Chigozie-coder.github.io/Swoader/Swoader.js"></script>
+         
+        <style type="text/css" >
+            body,html{
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                background: #111;
+                box-sizing: border-box;
+                overflow: hidden;
+                position:absolute;
+            }
+            #car{
+                position: absolute;
+                top: 59vh;
+                left: -100vw;
+                animation: move 5s linear infinite;
+            }
+            #ct,#cb,#t1,#t2,#cg,#fl,#fb,#bl,#fl,#m,#l{
+                position: absolute;
+            }
+            #ct{
+                background: linear-gradient(180deg, #eeeeee 50%, transparent 50%);
+                height: 180px;
+                width: 180px;
+                
+                border-top-left-radius: 80pc;
+                border-top-right-radius: 80pc;
+            }
+            #cb{
+                
+                background-color: #eeeeee;
+                height: 80px;
+                width: 240px;
+                border-top-left-radius: 40px;
+                left: -10px;
+                top: 50px;
+                border-top-right-radius: 40px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            #t1{
+                background: linear-gradient(#eee 50%, grey 50%);
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                border: 10px solid black;
+                top: 50px;
+                left: 30px;
+                animation: rotate 1s linear infinite;
+            }
+            #t2{
+                background: linear-gradient(#eee 50%, grey 50%);
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                border: 10px solid black;
+                top: 50px;
+                left: 165px;
+                animation: rotate 1s linear infinite;
+            }
+            #cg{
+                background: linear-gradient(180deg, #459BB0 50%, transparent 50%);
+                height: 100px;
+                width: 140px;
+                border-top-left-radius: 80px;
+                border-top-right-radius: 80px;
+                top: -40px;
+                left: 30px;
+            }
+            #fl{
+                background-color: #FFD900;
+                height: 20px;
+                width: 40px;
+                left: 200px;
+                top: 25px;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                box-shadow: 0 0 10px #FFD900;
+            }
+            #bl{
+                background-color: #D4473F;
+                height: 15px;
+                width: 20px;
+                top: 33px;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+                box-shadow: 0 0 10px #D4473F;
+            }
+            #m{
+                background-color: #eeeeee;
+                height: 15px;
+                width: 20px;
+                left: 145px;
+                top: -6px;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+            #l{
+                background:linear-gradient(to top left, #FFD900 50%, transparent 50%) ;
+                height: 30px;
+                width: 80px;
+                left: 237px;
+                top: 10px;
+                opacity: 0.5;
+                transform: rotate(5deg);
+            }
+            #h{
+                background: #eeeeee;
+                height: 40px;
+                width: 80%;
+                margin-left:10%;
+                color: #8C8C8C;
+                font-family: 'Merienda';
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                position: relative;
+                top:10px;
+            }
+            @keyframes rotate{
+                50%{
+                    transform: rotate(1080deg);
+                }
+                100%{
+                    transform: rotate(3600deg);
+                }
+                
+            }
+            @keyframes move{
+                0%{
+                    left: -100vw;
+                }
+                100%{
+                    left: 150vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+       
+       <div id="car">
+           <div id="ct">
+              
+           </div>
+           <div id="cb"> 
+           <div id="cg">
+                   
+               </div>
+               <div id="t1">
+                   
+               </div>
+               <div id="t2">
+                   
+               </div>
+               <div id="fl">
+                   
+               </div>
+               <div id="bl">
+                   
+               </div>
+               <div id="m">
+                   
+               </div>
+               <div id="l">
+                   
+               </div>
+           </div>
+           
+       </div>
+    </body>
 </html>
+
