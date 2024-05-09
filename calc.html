@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="calc.css" />
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <input type="text" id="result" readonly placeholder="0" />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- first row -->
+            <tr>
+                <td>
+                    <button onclick="result.value=''">C</button>
+                </td>
+                <td>
+                    <button>%</button>
+                </td>
+                <td>
+                    <button onclick="result.value=result.value.slice(0, -1)">DEL</button>
+                </td>
+                <td>
+                    <button>/</button>
+                </td>
+            </tr>
+            <!-- second row -->
+            <tr>
+                <td>
+                    <button>7</button>
+                </td>
+                <td>
+                    <button>8</button>
+                </td>
+                <td>
+                    <button>9</button>
+                </td>
+                <td>
+                    <button>*</button>
+                </td>
+                </tr>
+                <!-- third row -->
+                <tr>
+                <td>
+                    <button>4</button>
+                </td>
+                <td>
+                    <button>5</button>
+                </td>
+                <td>
+                    <button>6</button>
+                </td>
+                <td>
+                    <button>-</button>
+                </td>
+            </tr>
+            <!-- fourth row -->
+            <tr>
+                <td>
+                    <button onclick="result.value+='1'">1</button>
+                </td>
+                <td>
+                    <button onclick="result.value+='2'">2</button>
+                </td>
+                <td>
+                    <button>3</button>
+                </td>
+                <td>
+                    <button onclick="result.value+='+'">+</button>
+                </td>
+            </tr>
+            <!-- fifth row -->
+            <tr>
+                <td>
+                    <button>00</button>
+                </td>
+                <td>
+                    <button>0</button>
+                </td>
+                <td>
+                    <button>.</button>
+                </td>
+                <td>
+                    <button onclick="result.value=eval(result.value)">=</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
